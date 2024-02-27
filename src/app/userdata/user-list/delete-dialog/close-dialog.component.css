@@ -1,0 +1,16 @@
+.mat-sort-header-content,.ng-tns-c1267148319-8{
+    flex-direction: column;
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+/* .text{
+    color: red;
+    font-weight: bold;
+}
+.ng-star-inserted{
+    background-color: red;
+} */

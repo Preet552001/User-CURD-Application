@@ -1,0 +1,78 @@
+<!-- <mat-dialog-actions align="end">
+  <button mat-mini-fab color="warn" mat-dialog-close><mat-icon>close</mat-icon></button>
+</mat-dialog-actions>
+<mat-dialog-content>
+    <h1>{{data.user.firstName + " "+data.user.lastName }}</h1>
+    <p>Age: {{data.user.age}}</p>
+    <p>Gender: {{data.user.gender}}</p>
+    <p>Phone No.: {{data.user.phone}}</p>
+    <p>Address: {{data.user.address.address}}</p>
+</mat-dialog-content> -->
+<div class="flex">
+  <h2 mat-dialog-title>
+    <!-- <div class="flex">-->
+    
+    <!-- <div>  -->
+      UserInfo
+    <!-- </div>  
+      <div> -->
+      
+    <!-- </div>
+    </div> -->
+  </h2>
+  <mat-dialog-actions>
+    <button mat-mini-fab color="warn" mat-dialog-close><mat-icon>close</mat-icon></button>
+    </mat-dialog-actions>
+</div>
+
+  
+  <form mat-dialog-content [formGroup]="registrationForm" class="example-form">
+    
+
+  <mat-form-field class="example-full-width">
+      <mat-label>Enter your First Name</mat-label>
+      <input matInput placeholder="Enter First Name" formControlName="firstName" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+      <mat-label>Enter your Last Name</mat-label>
+      <input matInput placeholder="Enter last Name" formControlName="lastName">    
+  </mat-form-field>
+
+  <br>
+  <mat-form-field class="example-full-width">
+      <mat-label>Enter your Email</mat-label>
+      <input matInput placeholder="Enter Email" formControlName="email">    
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Gender</mat-label>
+    <input placeholder="Enter Gender" matInput formControlName="gender" >
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Birth Date</mat-label>
+    <input placeholder="Enter Birth Date" matInput formControlName="birthDate" >
+  </mat-form-field>
+  <!-- <mat-form-field class="example-full-width">
+    <mat-label>Date of Birth</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="birthDate">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+  <br>
+  <!-- <mat-form-field class="example-full-width">
+    <mat-label>Phone</mat-label>
+    <input placeholder="Enter Phone" matInput formControlName="phone" >
+  </mat-form-field>
+  <br> -->
+  <mat-form-field class="example-full-width">
+      <mat-label>Enter your Address</mat-label>
+      <input matInput placeholder="Enter Address" formControlName="address">    
+  </mat-form-field>
+  <br>
+</form>
+  <mat-dialog-actions align="center">
+  <button mat-raised-button color="primary" (click)="Save()" [disabled]="registrationForm.invalid">Submit</button>
+</mat-dialog-actions>
+

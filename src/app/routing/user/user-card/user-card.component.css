@@ -1,0 +1,9 @@
+.mdc-card__actions{
+
+    justify-content: space-between;
+}
+
+.mat-mdc-card{
+    height: 150px;
+    width: 250px;
+}

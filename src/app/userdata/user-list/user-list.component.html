@@ -1,0 +1,68 @@
+<div matSort class="mat-elevation-z8 mat-table-container">
+<table mat-table [dataSource]="dataSource" >
+  <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+    <th mat-header-cell *matHeaderCellDef > 
+      <div>
+      <h5 mat-sort-header>{{column | titlecase}} </h5>
+      <div>
+        <mat-form-field>
+          <mat-label>Filtering on {{column | titlecase}}</mat-label>
+          <input
+          matInput
+          
+          (keyup)="filter($event, column)"
+        />
+      </mat-form-field>
+      </div>
+    </div>
+    </th>
+    <td mat-cell *matCellDef="let element"> {{element[column]}} </td>
+  </ng-container>
+  <ng-container matColumnDef="gender">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions">
+      <div>
+        <h5 mat-sort-header>      Gender
+        </h5>
+        <div>
+          <mat-form-field >
+            <mat-label>Select Gender</mat-label>
+            <mat-select (valueChange)="onOptionsFilter($event, 'gender')">
+              <mat-option [value]="'All'">All</mat-option>
+              <mat-option [value]="'Male'">Male</mat-option>
+              <mat-option [value]="'Female'">Female</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      
+    </th>
+    <!-- <td mat-cell *matCellDef="let element">
+      <button mat-raised-button (click)="openDialog(element)">Detail</button>
+    </td> -->
+    <td mat-cell *matCellDef="let element"> {{element.gender | titlecase }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="expand">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions"><h4>Edit/Delete</h4></th>
+    <td mat-cell *matCellDef="let element">
+    <div class="flex">
+      <button color="primary" mat-mini-fab (click)="openDialog(element)"><mat-icon>edit</mat-icon></button>
+      <button mat-mini-fab color="warn" (click)="openCloseDialog(element)"><mat-icon>delete</mat-icon></button>
+    </div>
+    </td>
+  </ng-container>
+  <!-- <ng-container matColumnDef="expand">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions">User Info</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-raised-button (click)="openDialog(element)">Detail</button>
+    </td>
+  </ng-container> -->
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnsToDisplay;"></tr>
+</table>
+<mat-paginator
+    [pageSizeOptions]="[5, 10]"
+    showFirstLastButtons=""
+  ></mat-paginator>
+</div> 

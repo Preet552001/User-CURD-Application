@@ -1,0 +1,76 @@
+<div class="flex">
+<h2>User Form</h2>
+<form [formGroup]="registrationForm" class="example-full-width" (ngSubmit)="AddnewUser()">
+    <table class="example-full-width" cellspacing="0"><tr>
+        <td>
+<mat-form-field class="example-full-width">
+    <mat-label>Enter your First Name</mat-label>
+    <input matInput placeholder="Enter First Name" formControlName="firstName">
+</mat-form-field></td>
+<td>
+<mat-form-field class="example-full-width">
+    <mat-label>Enter your Last Name</mat-label>
+    <input matInput placeholder="Enter last Name" formControlName="lastName">    
+</mat-form-field></td>
+</tr></table>
+
+<mat-form-field class="example-full-width">
+    <mat-label>Enter your Email</mat-label>
+    <input matInput placeholder="Enter Email" formControlName="email">    
+</mat-form-field>
+<br>
+<table class="example-full-width" cellspacing="0"><tr>
+<td>
+    <mat-form-field class="example-full-width">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthDate">
+        <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </td>
+      <td>
+        <mat-form-field class="example-full-width">
+            <mat-label>Select Gender</mat-label>
+            <mat-select formControlName="gender">
+              <mat-option value="male">Male</mat-option>
+              <mat-option value="female">Female</mat-option>
+            </mat-select>
+            <!-- <mat-hint align="end">Here's the dropdown arrow ^</mat-hint> -->
+          </mat-form-field>
+
+    </td>
+</tr></table>
+<div formGroupName="address">
+  <mat-form-field class="example-full-width">
+    <mat-label>Address</mat-label>
+    <input formControlName="address" matInput >
+  </mat-form-field>
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td>
+    
+  <mat-form-field class="example-full-width">
+    <mat-label>City</mat-label>
+    <input formControlName="city" matInput >
+  </mat-form-field>
+</td>
+  <td>
+  <mat-form-field class="example-full-width">
+    <mat-label>State</mat-label>
+    <input formControlName="state" matInput >
+  </mat-form-field>
+
+</td>
+</tr></table>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Pincode</mat-label>
+    <input formControlName="pincode" matInput >
+  </mat-form-field>
+  
+</div>
+<button mat-raised-button color="primary" class="flex" [disabled]="registrationForm.invalid"  type="submit">Submit</button>
+
+</form>
+
+</div>

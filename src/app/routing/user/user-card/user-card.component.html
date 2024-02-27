@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Name:{{userIdSelected.name}}</mat-card-title>
+        <mat-card-subtitle>Id:{{userIdSelected.id}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>Message:{{userIdSelected.message}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <ng-container *ngIf="userIdSelected.id != 1" >
+            <button mat-flat-button color="primary"  [routerLink]="'/user/'+(userIdSelected.id-1)">Previous</button>
+        </ng-container> 
+        <ng-container *ngIf="userIdSelected.id != 4" >
+            <button mat-flat-button color="primary"  [routerLink]="'/user/'+(userIdSelected.id+1)">Next</button>
+        </ng-container> 
+    </mat-card-actions>
+</mat-card>
+
+

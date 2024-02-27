@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+}
+.mat-sort-header-content,.ng-tns-c1267148319-8{
+    flex-direction: column;
+}
+.flex{
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+.mat-table-container {
+    overflow: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+  
+
+  
+
+
+  
+  

@@ -1,0 +1,29 @@
+.mat-sort-header-content,.ng-tns-c1267148319-8{
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  
+}
+  
+.example-form {
+  min-width: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+  .example-full-width {
+    width: 100%;
+  }
+
+.mat-table-container {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+
+  .mdc-button{
+    width: 200px;
+  }

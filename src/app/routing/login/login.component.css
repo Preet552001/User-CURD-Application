@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+.example-form {
+  min-width: 248px;
+  max-width: 400px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+.mdc-button {
+  width: 200px;
+}

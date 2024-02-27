@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <div>
+    <span>Routing in Angular</span>
+    </div>
+  
+    <div>
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/user">User</button>
+    <button mat-button routerLink="/userForm">User Form</button>
+    <button mat-button routerLink="/chart">Charts</button>
+    <button mat-button routerLink="/about">About</button>
+  </div>
+  <div>
+    <button mat-button routerLink="/login" *ngIf="!toogel" >Login</button>
+    <button mat-button routerLink="/login" [queryParams]="{logout:true}" *ngIf="toogel">Logout</button>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,34 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+}
+.example-form {
+  min-width: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+  .example-full-width {
+    width: 100%;
+  }
+
+.mat-table-container {
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    
+  }
+  td[_ngcontent-ng-c894895993] :nth-child(2){
+  padding-right: 0;
+}
+  
+  td {
+    padding-right: 8px;
+  }
+  .mdc-button{
+    width: 200px;
+  }

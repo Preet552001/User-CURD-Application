@@ -1,0 +1,74 @@
+[
+  {
+    "month": "JAN",
+    "data": 65,
+    "bg-color": "rgba(255, 99, 132, 0.2)",
+    "bd-color": "rgb(255, 99, 132)"
+  },
+  {
+    "month": "FEB",
+    "data": 59,
+    "bg-color": "rgba(255, 159, 64, 0.2)",
+    "bd-color": "rgb(255, 159, 64)"
+  },
+  {
+    "month": "MAR",
+    "data": 80,
+    "bg-color": "rgba(255, 205, 86, 0.2)",
+    "bd-color": "rgb(255, 205, 86)"
+  },
+  {
+    "month": "APR",
+    "data": 81,
+    "bg-color": "rgba(75, 192, 192, 0.2)",
+    "bd-color": "rgb(75, 192, 192)"
+  },
+  {
+    "month": "MAY",
+    "data": 56,
+    "bg-color": "rgba(54, 162, 235, 0.2)",
+    "bd-color": "rgb(54, 162, 235)"
+  },
+  {
+    "month": "JUN",
+    "data": 55,
+    "bg-color": "rgba(153, 102, 255, 0.2)",
+    "bd-color": "rgb(153, 102, 255)"
+  },
+  {
+    "month": "JUL",
+    "data": 40,
+    "bg-color": "rgba(3, 122, 43, 0.2)",
+    "bd-color": "rgb(3, 122, 43)"
+  },
+  {
+    "month": "AUG",
+    "data": 55,
+    "bg-color": "rgba(57, 58, 44,0.2)",
+    "bd-color": "rgb(57, 58, 44)"
+  },
+  {
+    "month": "SEP",
+    "data": 56,
+    "bg-color": "rgba(22, 9, 198,0.2)",
+    "bd-color": "rgb(22, 9, 198)"
+  },
+  {
+    "month": "OCT",
+    "data": 60,
+    "bg-color": "rgba(162, 191, 45,0.2)",
+    "bd-color": "rgb(162, 191, 45)"
+  },
+  {
+    "month": "NOV",
+    "data": 20,
+    "bg-color": "rgba(196, 66, 1, 0.2)",
+    "bd-color": "rgb(196, 66, 1)"
+  },
+  {
+    "month": "DEC",
+    "data": 70,
+    "bg-color": "rgba(45, 20, 30, 0.2)",
+    "bd-color": "rgb(45, 20, 30)"
+  }
+]
